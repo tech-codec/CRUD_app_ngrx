@@ -1,0 +1,22 @@
+<div class="container">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <ul class="navbar navbar-nav">
+      <li>
+        <button class="btn  m-lg-2 btn-sm" [ngClass] ="productstate.currentAction.type === ProductsActionsTypes.GET_ALL_PRODUCTS_SUCCESS? 'btn-danger': 'btn-outline-info'" (click)="onGetAllProducts()">All</button>
+      </li>
+      <li>
+        <button class="btn  ml-2m-lg-2 btn-sm" [ngClass]="productstate.currentAction.type === ProductsActionsTypes.GET_SELECTED_PRODUCTS_SUCCESS? 'btn-danger': 'btn-outline-info'" (click)="onGetSelectedProducts()">Selected</button>
+      </li>
+      <li>
+        <button class="btn  m-lg-2 btn-sm" [ngClass]="productstate.currentAction.type === ProductsActionsTypes.GET_UNSELECTED_PRODUCTS_SUCCESS? 'btn-danger': 'btn-outline-info'" (click)="onGetAvailableProducts()">Available</button>
+      </li>
+      <li>
+        <button class="btn  m-lg-2 btn-sm" [ngClass]="productstate.currentAction.type=== ProductsActionsTypes.NEW_PRODUCT_SUCCESS? 'btn-danger': 'btn-outline-info'" (click)="onNewProduct()">NewProduct</button>
+      </li>
+    </ul>
+    <form class="d-flex m-lg-auto" #f= "ngForm" (ngSubmit)="onSearchProduct(f.value)">
+      <input class="form-control me-2" type="search" placeholder="Search" name="keyWord" ngModel aria-label="Search">
+      <button class="btn  btn-sm" [ngClass]="productstate.currentAction.type===ProductsActionsTypes.SEARCH_PRODUCTS_SUCCESS? 'btn-danger': 'btn-outline-info'" type="submit">Search</button>
+    </form>
+  </nav>
+</div>

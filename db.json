@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "computer science",
+      "price": 45788,
+      "quantity": 70,
+      "description": "puissant et resistant",
+      "selected": false,
+      "available": true
+    },
+    {
+      "id": 3,
+      "name": "telephone",
+      "price": 25600,
+      "quantity": 25,
+      "description": "good power",
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "maison du bonheur",
+      "price": 475622,
+      "quantity": 47,
+      "description": "très rapide",
+      "selected": false,
+      "available": false
+    },
+    {
+      "name": "spring boot",
+      "price": 4000,
+      "quantity": 5,
+      "description": "très bon ^rix",
+      "selected": true,
+      "available": true,
+      "id": 6
+    },
+    {
+      "name": "laravel",
+      "price": 78855,
+      "quantity": 6,
+      "description": "très important",
+      "selected": false,
+      "available": true,
+      "id": 7
+    }
+  ]
+}
